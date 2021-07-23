@@ -1,5 +1,5 @@
 const Joi = require('joi');
-const { findMany, findOneById, createOne, updateOne, deleteOne, findImagesPerProductId } = require('../models/productsImages.model');
+const { findMany, findOneById, createOne, updateOne, deleteOne, findImagesPerProductId } = require('../models/portfolio.model');
 
 const getAllImages = (req, res) => {
   findMany()

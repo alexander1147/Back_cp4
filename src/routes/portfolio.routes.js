@@ -1,10 +1,10 @@
-const productsImages = require('express').Router();
-const { getAllImages, getOneImagesById, createOneImages, updateOneImages, deleteOneImages } = require('../controllers/productsImages.controller');
+const portfolio = require('express').Router();
+const { getAllImages, getOneImagesById, createOneImages, updateOneImages, deleteOneImages } = require('../controllers/portfolio.controller');
 
-productsImages.get('/', getAllImages);
-productsImages.get('/:id', getOneImagesById);
-productsImages.post('/', createOneImages, getOneImagesById);
-productsImages.put('/:id', updateOneImages, getOneImagesById);
-productsImages.delete('/:id', deleteOneImages);
+portfolio.get('/', getAllImages);
+portfolio.get('/:id', getOneImagesById);
+portfolio.post('/', createOneImages, getOneImagesById);
+portfolio.put('/:id', updateOneImages, getOneImagesById);
+portfolio.delete('/:id', deleteOneImages);
 
-module.exports = productsImages;
+module.exports = portfolio;

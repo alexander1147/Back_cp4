@@ -10,14 +10,14 @@ const findOneById = (id) => {
   return connection.promise().query(sql, [id]);
 };
 
-const createOne = (productsImages) => {
+const createOne = (portfolio) => {
   const sql = 'INSERT INTO products_images SET ?';
-  return connection.promise().query(sql, [productsImages]);
+  return connection.promise().query(sql, [portfolio]);
 };
 
-const updateOne = (productsImages, id) => {
+const updateOne = (portfolio, id) => {
   const sql = 'UPDATE products_images SET ? WHERE id=?';
-  return connection.promise().query(sql, [productsImages, id]);
+  return connection.promise().query(sql, [portfolio, id]);
 };
 
 const deleteOne = (id) => {
